@@ -1,0 +1,191 @@
+.label-manager {
+  padding: 20px;
+  width: 100%;
+  background-color: #f5f5f5;
+  border-radius: 8px;
+}
+
+.label-form {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin-bottom: 20px;
+}
+
+.label-input {
+  width: 100%;
+  height: 40px;
+  padding: 8px 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 14px;
+}
+
+.label-form-actions {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+}
+
+.color-picker {
+  width: 40px;
+  height: 40px;
+  padding: 2px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  cursor: pointer;
+  background-color: white;
+}
+
+.add-label-btn {
+  height: 40px;
+  padding: 0 24px;
+  background-color: #2196f3;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 14px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  white-space: nowrap;
+  flex: 1;
+}
+
+.add-label-btn:hover {
+  background-color: #1976d2;
+}
+
+.labels-list {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.label-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 8px;
+  background-color: white;
+  border-radius: 4px;
+  transition: all 0.2s ease;
+}
+
+.label-item:hover {
+  background-color: #f0f0f0;
+}
+
+.label-item.selected {
+  background-color: #e3f2fd;
+}
+
+.label-content {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  flex: 1;
+  cursor: pointer;
+}
+
+.label-color {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  border: 1px solid #ccc;
+  flex-shrink: 0;
+}
+
+.label-name {
+  font-size: 14px;
+  color: #333;
+  cursor: text;
+  padding: 2px 4px;
+  border-radius: 2px;
+  transition: background-color 0.2s ease;
+}
+
+.label-name:hover {
+  background-color: rgba(33, 150, 243, 0.1);
+}
+
+.edit-label-input {
+  font-size: 14px;
+  color: #333;
+  border: 1px solid #2196f3;
+  border-radius: 2px;
+  padding: 2px 4px;
+  margin: -3px 0;
+  width: 100%;
+  background: white;
+}
+
+.edit-label-input:focus {
+  outline: none;
+  box-shadow: 0 0 0 2px rgba(33, 150, 243, 0.2);
+}
+
+.label-actions {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.edit-color-picker {
+  width: 24px;
+  height: 24px;
+  padding: 0;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  cursor: pointer;
+  background-color: white;
+}
+
+.delete-label-btn {
+  width: 24px;
+  height: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #ff4444;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 18px;
+  padding: 0;
+  line-height: 1;
+  transition: background-color 0.2s ease;
+}
+
+.delete-label-btn:hover {
+  background-color: #cc0000;
+}
+
+button:focus,
+input:focus {
+  outline: none;
+  box-shadow: 0 0 0 2px rgba(33, 150, 243, 0.4);
+}
+
+/* Add tooltip styles */
+[title] {
+  position: relative;
+}
+
+[title]:hover::after {
+  content: attr(title);
+  position: absolute;
+  bottom: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  padding: 4px 8px;
+  background-color: rgba(0, 0, 0, 0.8);
+  color: white;
+  font-size: 12px;
+  border-radius: 4px;
+  white-space: nowrap;
+  z-index: 10;
+  pointer-events: none;
+}
